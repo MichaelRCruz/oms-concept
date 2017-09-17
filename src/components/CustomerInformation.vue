@@ -2,8 +2,9 @@
   <div class="formSection">
 
     <h1>Customer Information</h1>
+    <dropdown></dropdown>
 
-    <div class="field is-horizontal">
+    <!-- <div class="field is-horizontal">
       <div class="field-label is-small">
         <label class="label">Account</label>
       </div>
@@ -25,14 +26,19 @@
           <option value="Bolivia">Bolivia</option>
         </select>
       </div>
-    </div>
+    </div> -->
 
 
   </div>
 </template>
 
 <script>
+import Dropdown from './fields/dropdown';
+
 export default {
+  components: {
+    Dropdown
+  }
 }
 </script>
 
