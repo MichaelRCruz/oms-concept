@@ -57,6 +57,19 @@
 
     <div class="field is-horizontal">
       <div class="field-label is-small">
+        <label class="label">Customer Comments</label>
+      </div>
+      <div class="field-body is-small">
+        <div class="field">
+          <div class="control">
+            <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-small">
         <label class="label">Credit Card Fee</label>
       </div>
       <div class="field-body">

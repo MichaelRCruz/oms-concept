@@ -13,13 +13,181 @@
 
       <div class="notification panel">
         <div class="leftPanel">
-          <customer-information class="formComponent" />
+          <!-- <customer-information class="formComponent" />
           <shipping-information class="formComponent" />
-          <totals class="formComponent" />
+          <totals class="formComponent" /> -->
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Dropdown</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <div class="select is-fullwidth is-small">
+                    <select>
+                      <option>Business development</option>
+                      <option>Marketing</option>
+                      <option>Sales</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Radio Buttons</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="member">
+                    Yes
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="member">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Input</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
+                </div>
+                <p class="help is-danger">
+                  This field is required
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Text Area</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea is-small" placeholder="Explain how we can help you"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Checkbox</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox" name="member">
+                    Yes
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="rightPanel">
-          <sales-order-details class="formComponent" />
-          <additional-information />
+        <div class="rightPanel field">
+          <!-- <sales-order-details class="formComponent" />
+          <additional-information /> -->
+
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Dropdown</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <div class="select is-fullwidth is-small">
+                    <select>
+                      <option>Business development</option>
+                      <option>Marketing</option>
+                      <option>Sales</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Radio Buttons</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="member">
+                    Yes
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="member">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Input</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
+                </div>
+                <p class="help is-danger">
+                  This field is required
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Text Area</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea is-small" placeholder="Explain how we can help you"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Checkbox</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox" name="member">
+                    Yes
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -29,19 +197,27 @@
 
 
 <script>
-  import CustomerInformation from './CustomerInformation.vue';
-  import ShippingInformation from './ShippingInformation.vue';
-  import Totals from './Totals.vue';
+  // import CustomerInformation from './CustomerInformation.vue';
+  // import ShippingInformation from './ShippingInformation.vue';
+  // import Totals from './Totals.vue';
   import SalesOrderDetails from './SalesOrderDetails.vue';
   import AdditionalInformation from './AdditionalInformation.vue';
+  import Dropdown from './fields/dropdown';
+  import TextArea from './fields/textarea';
+  import Checkbox from './fields/checkbox';
+  import Input from './fields/input';
 
   export default {
     components: {
-        CustomerInformation,
-        ShippingInformation,
-        Totals,
+        // CustomerInformation,
+        // ShippingInformation,
+        // Totals,
         SalesOrderDetails,
-        AdditionalInformation
+        AdditionalInformation,
+        Dropdown,
+        TextArea,
+        Checkbox,
+        Input
       },
     data () {
       return {

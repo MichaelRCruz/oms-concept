@@ -3,13 +3,20 @@
 
     <div class="field is-horizontal">
       <div class="field-label is-small">
-        <label class="label">Account</label>
+        <label class="label">Department</label>
       </div>
-      <div class="select is-fullwidth is-small">
-        <select name="country">
-          <option value="Argentina">Argentina</option>
-          <option value="Bolivia">Bolivia</option>
-        </select>
+      <div class="field-body">
+        <div class="field is-narrow">
+          <div class="control">
+            <div class="select is-fullwidth is-small">
+              <select>
+                <option>Business development</option>
+                <option>Marketing</option>
+                <option>Sales</option>
+              </select>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
