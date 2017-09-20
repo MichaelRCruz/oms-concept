@@ -9,7 +9,7 @@
 </template>
 
 <script>
-  import SalesOrder from './components/SalesOrder.vue'
+  import SalesOrder from './components/SalesOrder.vue';
 
   export default {
     components: {

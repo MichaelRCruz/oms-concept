@@ -5,6 +5,7 @@ import App from './App';
 import VueRouter from 'vue-router';
 import { routes } from './routes';
 import { store } from './store/store';
+console.log(process.env.API_KEY, 'is this working');
 
 Vue.use(VueRouter);
 
