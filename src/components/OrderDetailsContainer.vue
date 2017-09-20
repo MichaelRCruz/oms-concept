@@ -18,7 +18,7 @@
           <totals class="formComponent" /> -->
           <div class="field is-horizontal">
             <div class="field-label is-small">
-              <label class="label">Dropdown</label>
+              <label class="label"></label>
             </div>
             <div class="field-body">
               <div class="field is-narrow">
@@ -37,20 +37,80 @@
 
           <div class="field is-horizontal">
             <div class="field-label is-small">
-              <label class="label">Radio Buttons</label>
+              <label class="label">Input</label>
             </div>
             <div class="field-body">
-              <div class="field is-narrow">
+              <div class="field">
                 <div class="control">
-                  <label class="radio">
-                    <input type="radio" name="member">
-                    Yes
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="member">
-                    No
-                  </label>
+                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
                 </div>
+                <p class="help is-danger">
+                  This field is required
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Input</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
+                </div>
+                <p class="help is-danger">
+                  This field is required
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Input</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
+                </div>
+                <p class="help is-danger">
+                  This field is required
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Input</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
+                </div>
+                <p class="help is-danger">
+                  This field is required
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Input</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
+                </div>
+                <p class="help is-danger">
+                  This field is required
+                </p>
               </div>
             </div>
           </div>
@@ -188,6 +248,26 @@
             </div>
           </div>
 
+          <div class="field is-horizontal">
+            <div class="field-label is-small">
+              <label class="label">Radio Buttons</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-narrow">
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="member">
+                    Yes
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="member">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -201,23 +281,23 @@
   // import ShippingInformation from './ShippingInformation.vue';
   // import Totals from './Totals.vue';
   import SalesOrderDetails from './SalesOrderDetails.vue';
-  import AdditionalInformation from './AdditionalInformation.vue';
-  import Dropdown from './fields/dropdown';
-  import TextArea from './fields/textarea';
-  import Checkbox from './fields/checkbox';
-  import Input from './fields/input';
+  // import AdditionalInformation from './AdditionalInformation.vue';
+  // import Dropdown from './fields/dropdown';
+  // import TextArea from './fields/textarea';
+  // import Checkbox from './fields/checkbox';
+  // import Input from './fields/input';
 
   export default {
     components: {
         // CustomerInformation,
         // ShippingInformation,
         // Totals,
-        SalesOrderDetails,
-        AdditionalInformation,
-        Dropdown,
-        TextArea,
-        Checkbox,
-        Input
+        SalesOrderDetails
+        // AdditionalInformation,
+        // Dropdown,
+        // TextArea,
+        // Checkbox,
+        // Input
       },
     data () {
       return {
