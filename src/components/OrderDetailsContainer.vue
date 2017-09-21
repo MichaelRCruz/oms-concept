@@ -16,8 +16,15 @@
         <dropdown />
         <text-area />
         <radio-button />
-        <input-field />
         <checkbox />
+
+        <input-field>
+        </input-field>
+
+        <input-field />
+        <input-field />
+        <input-field />
+        <input-field />
 
       </div>
 
@@ -94,6 +101,7 @@
     beforeMount() {
       // this.fetchA();
       // console.log(this.zohoData);
+      console.log(this.$store.state.stringThing);
     }
   }
 
