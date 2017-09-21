@@ -5,7 +5,7 @@
       <label class="label">Input</label>
     </div>
     <div class="field-body">
-      <div class="field is-narrow">
+      <div class="field is-fullwidth">
         <div class="control">
           <input class="input is-small" type="text" placeholder="Small sized input">
           </div>
