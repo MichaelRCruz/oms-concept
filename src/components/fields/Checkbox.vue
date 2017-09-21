@@ -9,7 +9,7 @@
           <div class="control">
             <label class="checkbox is-small">
               <input type="checkbox">
-              Checkbox
+              <span class="buttonLabel">yes</span>
             </label>
           </div>
         </div>
@@ -23,5 +23,10 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style scoped>
+
+.buttonLabel {
+  font-size: 13px
+}
+
 </style>

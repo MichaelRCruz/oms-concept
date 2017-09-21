@@ -15,6 +15,7 @@
 
         <dropdown />
         <text-area />
+        <radio-button />
         <input-field />
         <checkbox />
 
@@ -40,13 +41,15 @@
   import TextArea from './fields/TextArea';
   import Checkbox from './fields/checkbox';
   import InputField from './fields/InputField';
+  import RadioButton from './fields/RadioButton';
 
   export default {
     components: {
         Dropdown,
         TextArea,
         Checkbox,
-        InputField
+        InputField,
+        RadioButton
       },
     data () {
       return {
