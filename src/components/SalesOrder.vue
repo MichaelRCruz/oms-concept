@@ -3,7 +3,7 @@
 
     <nav-bar />
     <order-info />
-    <order-details-container />
+    <sales-order-container />
 
   </div>
 </template>
@@ -11,13 +11,13 @@
 <script>
   import NavBar from './NavBar.vue';
   import OrderInfo from './OrderInfo';
-  import OrderDetailsContainer from './OrderDetailsContainer';
+  import SalesOrderContainer from './SalesOrderContainer';
 
   export default {
     components: {
         NavBar,
         OrderInfo,
-        OrderDetailsContainer
+        SalesOrderContainer
       },
     data () {
       return {

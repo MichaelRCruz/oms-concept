@@ -3,7 +3,7 @@
   <div class="container">
     <div class="detailsHeader">
       <span class="containerTitle">
-        Order Details
+        Sales Order Details
       </span>
       <span class="containerTitle">
         <i class="fa fa-chevron-down toggleArrow" aria-hidden="true"></i>
