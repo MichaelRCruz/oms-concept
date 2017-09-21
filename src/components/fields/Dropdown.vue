@@ -9,9 +9,7 @@
         <div class="control">
           <div class="select is-fullwidth is-small">
             <select>
-              <option>Business development</option>
-              <option>Marketing</option>
-              <option>Sales</option>
+              <option v-for="option in options">{{ option }}</option>
             </select>
           </div>
         </div>
@@ -23,6 +21,7 @@
 
 <script>
 export default {
+  props: ['options']
 }
 </script>
 

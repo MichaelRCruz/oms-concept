@@ -13,16 +13,19 @@
     <div class="notification panel">
       <div class="leftPanel">
 
-        <dropdown />
-        <text-area />
+        <input-field :fieldName="'sales rep'"
+                     :placeholder="'Bobby Tables'"
+                     :fieldValue="sales_order.sales_representative.email" />
+        <dropdown :options="shipping_carriers" />
         <radio-button />
         <checkbox />
+        <text-area />
 
       </div>
 
       <div class="rightPanel field">
 
-        <h1 class="formGroupTitle">Shipping Address</h1>
+        <h6 class="title is-6">Shipping Address</h6>
         <input-field :fieldName="'name'"
                      :placeholder="'customer name'"
                      :fieldValue="sales_order.customer.shipping_address.shipping_name" />
@@ -38,7 +41,8 @@
         <input-field :fieldName="'zip'"
                      :placeholder="'12345'"
                      :fieldValue="sales_order.customer.shipping_address.zip" />
-        <h1 class="formGroupTitle">Billing Address</h1>
+
+        <h6 class="title is-6">Billing Address</h6>
         <input-field :fieldName="'name'"
                      :placeholder="'customer name'"
                      :fieldValue="sales_order.customer.billing_address.billing_name" />
@@ -59,7 +63,6 @@
     </div>
   </div>
 
-
 </template>
 
 
@@ -74,7 +77,11 @@
     components: { Dropdown, TextArea, Checkbox, InputField, RadioButton },
     data () {
       return {
+        shipping_carriers: ['FedEx', 'UPS', 'USPS'],
         sales_order: {
+          sales_representative: {
+            email: "hello@world.com"
+          },
           customer: {
             name: "Bobby Tables",
             shipping_address: {
@@ -93,8 +100,7 @@
               state: "California",
               zip: "90013"
             }
-          },
-
+          }
         }
       }
     },
@@ -182,10 +188,6 @@
   .containerTitle {
     font-weight: bold;
     padding-left: 5px;
-  }
-
-  .formGroupTitle {
-    color: red;
   }
 
 </style>
