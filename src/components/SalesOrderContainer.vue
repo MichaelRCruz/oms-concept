@@ -101,6 +101,10 @@
               state: "California",
               zip: "90013"
             }
+          },
+          line_items: {
+            one: "one",
+            two: "two"
           }
         }
       }

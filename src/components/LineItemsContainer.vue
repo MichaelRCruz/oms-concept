@@ -83,7 +83,7 @@
     components: { InputField, DropDown },
     data () {
       return {
-
+        line_items: {}
       }
     },
     methods: {
@@ -91,7 +91,7 @@
     },
     created() {
       eventBus.$on('here-is-data', shipping_carriers => {
-        console.log(shipping_carriers);
+        console.log('hello, event bus', shipping_carriers);
       });
     },
     beforeMount() {

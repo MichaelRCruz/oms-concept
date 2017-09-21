@@ -6,7 +6,6 @@ import VueRouter from 'vue-router';
 import { routes } from './routes';
 import { store } from './store/store';
 export const eventBus = new Vue();
-console.log(process.env.API_KEY, 'is this working');
 
 Vue.use(VueRouter);
 
