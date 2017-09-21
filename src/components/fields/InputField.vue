@@ -2,12 +2,17 @@
 
   <div class="field is-horizontal">
     <div class="field-label is-small">
-      <label class="label">Input</label>
+      <label class="label">
+        {{ fieldName }}
+      </label>
     </div>
     <div class="field-body">
       <div class="field is-fullwidth">
         <div class="control">
-          <input class="input is-small" type="text" placeholder="Small sized input">
+          <input class="input is-small"
+                 type="text"
+                 placeholder="Small sized input"
+                 v-model="fieldValue">
           </div>
         </div>
       </div>
@@ -18,6 +23,7 @@
 
 <script>
 export default {
+  props: ['fieldName', 'fieldValue']
 }
 </script>
 

@@ -14,17 +14,19 @@
       <div class="leftPanel">
 
         <dropdown />
+        <input-field :fieldName="'customer'"
+                     :fieldValue="sales_order.customer.name" />
+        <input-field :fieldName="'street'"
+                     :fieldValue="sales_order.customer.address.street" />
+        <input-field :fieldName="'city'"
+                     :fieldValue="sales_order.customer.address.city" />
+        <input-field :fieldName="'state'"
+                     :fieldValue="sales_order.customer.address.state" />
+        <input-field :fieldName="'zip'"
+                     :fieldValue="sales_order.customer.address.zip" />
         <text-area />
         <radio-button />
         <checkbox />
-
-        <input-field>
-        </input-field>
-
-        <input-field />
-        <input-field />
-        <input-field />
-        <input-field />
 
       </div>
 
@@ -54,8 +56,9 @@
     components: { Dropdown, TextArea, Checkbox, InputField, RadioButton },
     data () {
       return {
-        customers: [
-          {
+        fieldValue: "hello",
+        sales_order: {
+          customer: {
             name: "Bobby Tables",
             address: {
               street: "87 N Raymond Ave",
@@ -64,7 +67,7 @@
               zip: "90013"
             }
           }
-        ]
+        }
       }
     },
     methods: {
