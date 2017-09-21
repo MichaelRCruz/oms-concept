@@ -44,16 +44,20 @@
   import RadioButton from './fields/RadioButton';
 
   export default {
-    components: {
-        Dropdown,
-        TextArea,
-        Checkbox,
-        InputField,
-        RadioButton
-      },
+    components: { Dropdown, TextArea, Checkbox, InputField, RadioButton },
     data () {
       return {
-        zohoData: {}
+        customers: [
+          {
+            name: "Bobby Tables",
+            address: {
+              street: "87 N Raymond Ave",
+              city: "Pasadena",
+              state: "California",
+              zip: "90013"
+            }
+          }
+        ]
       }
     },
     methods: {
@@ -106,6 +110,7 @@
   .panel {
     padding: 0;
     display: flex;
+    padding: 20px 0 20px 0;
   }
 
   .leftPanel {
