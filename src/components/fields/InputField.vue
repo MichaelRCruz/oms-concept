@@ -11,7 +11,7 @@
         <div class="control">
           <input class="input is-small"
                  type="text"
-                 placeholder="Small sized input"
+                 :placeholder="placeholder"
                  v-model="fieldValue">
           </div>
         </div>
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  props: ['fieldName', 'fieldValue']
+  props: ['fieldName', 'fieldValue', 'placeholder']
 }
 </script>
 

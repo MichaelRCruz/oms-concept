@@ -14,16 +14,6 @@
       <div class="leftPanel">
 
         <dropdown />
-        <input-field :fieldName="'customer'"
-                     :fieldValue="sales_order.customer.name" />
-        <input-field :fieldName="'street'"
-                     :fieldValue="sales_order.customer.address.street" />
-        <input-field :fieldName="'city'"
-                     :fieldValue="sales_order.customer.address.city" />
-        <input-field :fieldName="'state'"
-                     :fieldValue="sales_order.customer.address.state" />
-        <input-field :fieldName="'zip'"
-                     :fieldValue="sales_order.customer.address.zip" />
         <text-area />
         <radio-button />
         <checkbox />
@@ -32,10 +22,38 @@
 
       <div class="rightPanel field">
 
-        <dropdown />
-        <text-area />
-        <input-field />
-        <checkbox />
+        <h1 class="formGroupTitle">Shipping Address</h1>
+        <input-field :fieldName="'name'"
+                     :placeholder="'customer name'"
+                     :fieldValue="sales_order.customer.shipping_address.shipping_name" />
+        <input-field :fieldName="'street'"
+                     :placeholder="'123 Main St'"
+                     :fieldValue="sales_order.customer.shipping_address.street" />
+        <input-field :fieldName="'city'"
+                     :placeholder="'Anytown'"
+                     :fieldValue="sales_order.customer.shipping_address.city" />
+        <input-field :fieldName="'state'"
+                     :placeholder="'California'"
+                     :fieldValue="sales_order.customer.shipping_address.state" />
+        <input-field :fieldName="'zip'"
+                     :placeholder="'12345'"
+                     :fieldValue="sales_order.customer.shipping_address.zip" />
+        <h1 class="formGroupTitle">Billing Address</h1>
+        <input-field :fieldName="'name'"
+                     :placeholder="'customer name'"
+                     :fieldValue="sales_order.customer.billing_address.billing_name" />
+        <input-field :fieldName="'street'"
+                     :placeholder="'123 Main St'"
+                     :fieldValue="sales_order.customer.billing_address.street" />
+        <input-field :fieldName="'city'"
+                     :placeholder="'Anytown'"
+                     :fieldValue="sales_order.customer.billing_address.city" />
+        <input-field :fieldName="'state'"
+                     :placeholder="'California'"
+                     :fieldValue="sales_order.customer.billing_address.state" />
+        <input-field :fieldName="'zip'"
+                     :placeholder="'12345'"
+                     :fieldValue="sales_order.customer.billing_address.zip" />
 
       </div>
     </div>
@@ -56,26 +74,34 @@
     components: { Dropdown, TextArea, Checkbox, InputField, RadioButton },
     data () {
       return {
-        fieldValue: "hello",
         sales_order: {
           customer: {
             name: "Bobby Tables",
-            address: {
-              street: "87 N Raymond Ave",
+            shipping_address: {
+              shipping_name: "Bobby Tables",
+              street1: "87 N Raymond Ave",
+              street2: "",
               city: "Pasadena",
+              state: "California",
+              zip: "91103"
+            },
+            billing_address: {
+              billing_name: "Pierre",
+              street1: "312 W 5th St",
+              street2: "312",
+              city: "Los Angeles",
               state: "California",
               zip: "90013"
             }
-          }
+          },
+
         }
       }
     },
     methods: {
       fetchA() {
         let _self = this;
-        let url = 'https://crm.zoho.com/crm/private/json/Contacts/getMyRecords?authtoken='
-        + process.env.API_KEY
-        + '&scope=crmapi';
+        let url = ''
         fetch(url, {
           headers: {
             "Content-Type": "text/plain"
@@ -156,6 +182,10 @@
   .containerTitle {
     font-weight: bold;
     padding-left: 5px;
+  }
+
+  .formGroupTitle {
+    color: red;
   }
 
 </style>
