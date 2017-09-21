@@ -72,6 +72,7 @@
   import Checkbox from './fields/checkbox';
   import InputField from './fields/InputField';
   import RadioButton from './fields/RadioButton';
+  import { eventBus } from '../main';
 
   export default {
     components: { Dropdown, TextArea, Checkbox, InputField, RadioButton },
@@ -133,10 +134,11 @@
           });
       }
     },
-    beforeMount() {
+    mounted() {
       // this.fetchA();
       // console.log(this.zohoData);
       console.log(this.$store.state.stringThing);
+      eventBus.$emit('here-is-data', this.shipping_carriers);
     }
   }
 

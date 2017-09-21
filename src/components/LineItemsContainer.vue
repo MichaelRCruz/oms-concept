@@ -27,16 +27,15 @@
         </thead>
         <!-- <tfoot>
           <tr>
-            <th>Team</th>
-            <th><abbr title="Played">Pld</abbr></th>
-            <th><abbr title="Won">W</abbr></th>
-            <th><abbr title="Drawn">D</abbr></th>
+            <th><abbr title="Product">Product</abbr></th>
+            <th><abbr title="Won">Quantity</abbr></th>
+            <th><abbr title="Drawn">Price</abbr></th>
             <th><abbr title="Lost">L</abbr></th>
             <th><abbr title="Goals for">GF</abbr></th>
             <th><abbr title="Goals against">GA</abbr></th>
             <th><abbr title="Goal difference">GD</abbr></th>
             <th><abbr title="Points">Pts</abbr></th>
-            <th>Qualification or relegation</th>
+            <th>Qualification</th>
           </tr>
         </tfoot> -->
         <tbody>
@@ -78,40 +77,22 @@
 <script>
   import InputField from './lineItemFields/InputField';
   import DropDown from './lineItemFields/DropDown';
+  import { eventBus } from '../main';
 
   export default {
     components: { InputField, DropDown },
     data () {
       return {
-        shipping_carriers: ['FedEx', 'UPS', 'USPS'],
-        sales_order: {
-          sales_representative: {
-            email: "hello@world.com"
-          },
-          customer: {
-            name: "Bobby Tables",
-            shipping_address: {
-              shipping_name: "Bobby Tables",
-              street1: "87 N Raymond Ave",
-              street2: "",
-              city: "Pasadena",
-              state: "California",
-              zip: "91103"
-            },
-            billing_address: {
-              billing_name: "Pierre",
-              street1: "312 W 5th St",
-              street2: "312",
-              city: "Los Angeles",
-              state: "California",
-              zip: "90013"
-            }
-          }
-        }
+
       }
     },
     methods: {
 
+    },
+    created() {
+      eventBus.$on('here-is-data', shipping_carriers => {
+        console.log(shipping_carriers);
+      });
     },
     beforeMount() {
       console.log(this.$store.state.stringThing);
