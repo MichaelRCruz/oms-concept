@@ -2,12 +2,13 @@
 
   <div class="field is-horizontal">
     <div class="field-label is-small">
-      <label class="label">Text Area</label>
+      <label class="label">Input</label>
     </div>
     <div class="field-body">
-      <div class="field">
+      <div class="field is-narrow">
         <div class="control">
-          <textarea class="textarea is-small" placeholder="Explain how we can help you"></textarea>
+          <input class="input is-small" type="text" placeholder="Small sized input">
+          </div>
         </div>
       </div>
     </div>
@@ -20,6 +21,5 @@ export default {
 }
 </script>
 
-<style >
-
+<style lang="css">
 </style>

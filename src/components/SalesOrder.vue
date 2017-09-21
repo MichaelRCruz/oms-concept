@@ -4,7 +4,6 @@
     <nav-bar />
     <order-info />
     <order-details-container />
-    <positions-container />
 
   </div>
 </template>
@@ -13,14 +12,12 @@
   import NavBar from './NavBar.vue';
   import OrderInfo from './OrderInfo';
   import OrderDetailsContainer from './OrderDetailsContainer';
-  import PositionsContainer from './PositionsContainer';
 
   export default {
     components: {
         NavBar,
         OrderInfo,
-        OrderDetailsContainer,
-        PositionsContainer
+        OrderDetailsContainer
       },
     data () {
       return {

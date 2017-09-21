@@ -1,311 +1,92 @@
 <template lang="html">
-  <div class="orderDetailsContainer">
 
-    <div class="container">
-      <div class="detailsHeader">
-        <span class="containerTitle">
-          Order Details
-        </span>
-        <span class="containerTitle">
-          <i class="fa fa-chevron-down toggleArrow" aria-hidden="true"></i>
-        </span>
-      </div>
-
-      <div class="notification panel">
-        <div class="leftPanel">
-          <!-- <customer-information class="formComponent" />
-          <shipping-information class="formComponent" />
-          <totals class="formComponent" /> -->
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label"></label>
-            </div>
-            <div class="field-body">
-              <div class="field is-narrow">
-                <div class="control">
-                  <div class="select is-fullwidth is-small">
-                    <select>
-                      <option>Business development</option>
-                      <option>Marketing</option>
-                      <option>Sales</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Input</label>
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
-                </div>
-                <p class="help is-danger">
-                  This field is required
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Input</label>
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
-                </div>
-                <p class="help is-danger">
-                  This field is required
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Input</label>
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
-                </div>
-                <p class="help is-danger">
-                  This field is required
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Input</label>
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
-                </div>
-                <p class="help is-danger">
-                  This field is required
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Input</label>
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
-                </div>
-                <p class="help is-danger">
-                  This field is required
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Input</label>
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
-                </div>
-                <p class="help is-danger">
-                  This field is required
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Text Area</label>
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <textarea class="textarea is-small" placeholder="Explain how we can help you"></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Checkbox</label>
-            </div>
-            <div class="field-body">
-              <div class="field is-narrow">
-                <div class="control">
-                  <label class="checkbox">
-                    <input type="checkbox" name="member">
-                    Yes
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rightPanel field">
-          <!-- <sales-order-details class="formComponent" />
-          <additional-information /> -->
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Dropdown</label>
-            </div>
-            <div class="field-body">
-              <div class="field is-narrow">
-                <div class="control">
-                  <div class="select is-fullwidth is-small">
-                    <select>
-                      <option>Business development</option>
-                      <option>Marketing</option>
-                      <option>Sales</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Radio Buttons</label>
-            </div>
-            <div class="field-body">
-              <div class="field is-narrow">
-                <div class="control">
-                  <label class="radio">
-                    <input type="radio" name="member">
-                    Yes
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="member">
-                    No
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Input</label>
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <input class="input is-small" type="text" placeholder="e.g. Partnership opportunity">
-                </div>
-                <p class="help is-danger">
-                  This field is required
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Text Area</label>
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <textarea class="textarea is-small" placeholder="Explain how we can help you"></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Checkbox</label>
-            </div>
-            <div class="field-body">
-              <div class="field is-narrow">
-                <div class="control">
-                  <label class="checkbox">
-                    <input type="checkbox" name="member">
-                    Yes
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-label is-small">
-              <label class="label">Radio Buttons</label>
-            </div>
-            <div class="field-body">
-              <div class="field is-narrow">
-                <div class="control">
-                  <label class="radio">
-                    <input type="radio" name="member">
-                    Yes
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="member">
-                    No
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
+  <div class="container">
+    <div class="detailsHeader">
+      <span class="containerTitle">
+        Order Details
+      </span>
+      <span class="containerTitle">
+        <i class="fa fa-chevron-down toggleArrow" aria-hidden="true"></i>
+      </span>
     </div>
 
+    <div class="notification panel">
+      <div class="leftPanel">
+
+        <dropdown />
+        <text-area />
+        <input-field />
+        <checkbox />
+
+      </div>
+
+      <div class="rightPanel field">
+
+        <dropdown />
+        <text-area />
+        <input-field />
+        <checkbox />
+
+      </div>
+    </div>
   </div>
+
+
 </template>
 
 
 <script>
-  // import CustomerInformation from './CustomerInformation.vue';
-  // import ShippingInformation from './ShippingInformation.vue';
-  // import Totals from './Totals.vue';
-  import SalesOrderDetails from './SalesOrderDetails.vue';
-  // import AdditionalInformation from './AdditionalInformation.vue';
-  // import Dropdown from './fields/dropdown';
-  // import TextArea from './fields/textarea';
-  // import Checkbox from './fields/checkbox';
-  // import Input from './fields/input';
+  import Dropdown from './fields/Dropdown';
+  import TextArea from './fields/TextArea';
+  import Checkbox from './fields/checkbox';
+  import InputField from './fields/InputField';
 
   export default {
     components: {
-        // CustomerInformation,
-        // ShippingInformation,
-        // Totals,
-        SalesOrderDetails
-        // AdditionalInformation,
-        // Dropdown,
-        // TextArea,
-        // Checkbox,
-        // Input
+        Dropdown,
+        TextArea,
+        Checkbox,
+        InputField
       },
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        zohoData: {}
       }
     },
     methods: {
-
+      fetchA() {
+        let _self = this;
+        let url = 'https://crm.zoho.com/crm/private/json/Contacts/getMyRecords?authtoken='
+        + process.env.API_KEY
+        + '&scope=crmapi';
+        fetch(url, {
+          headers: {
+            "Content-Type": "text/plain"
+          }
+        })
+          .then(
+            function(response) {
+              console.log(response);
+              if (response.status !== 200) {
+                console.log('Looks like there was a problem. Status Code: ' +
+                  response.status);
+                return;
+              }
+              // Examine the text in the response
+              response.json().then(function(data) {
+                console.log('cool', data);
+                _self.zohoData = data;
+              });
+            }
+          )
+          .catch(function(err) {
+            console.log('Fetch Error :-S', err);
+          });
+      }
+    },
+    beforeMount() {
+      // this.fetchA();
+      // console.log(this.zohoData);
     }
   }
 
