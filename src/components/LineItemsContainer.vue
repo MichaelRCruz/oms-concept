@@ -90,12 +90,12 @@
 
     },
     created() {
-      eventBus.$on('here-is-data', shipping_carriers => {
-        console.log('hello, event bus', shipping_carriers);
-      });
+      // eventBus.$on('here-is-data', shipping_carriers => {
+      //   console.log('hello, event bus', shipping_carriers);
+      // });
     },
     beforeMount() {
-      console.log(this.$store.state.stringThing);
+      // console.log(this.$store.state.stringThing);
     }
   }
 

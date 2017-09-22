@@ -5,6 +5,7 @@ import App from './App';
 import VueRouter from 'vue-router';
 import { routes } from './routes';
 import { store } from './store/store';
+
 export const eventBus = new Vue();
 
 Vue.use(VueRouter);
