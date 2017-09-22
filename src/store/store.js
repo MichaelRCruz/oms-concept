@@ -29,10 +29,33 @@ export const store = new Vuex.Store({
           zip: "90013"
         }
       },
-      line_items: {
-        product: "Widget from L.A.",
-        quantity: "3"
-      }
+      line_items: [
+        {
+          product: "pants",
+          quantity: 3,
+          price: 12.09
+        },
+        {
+          product: "shirt",
+          quantity: 10,
+          price: 2.10
+        },
+        {
+          product: "hat",
+          quantity: 8,
+          price: .09
+        },
+        {
+          product: "shoes",
+          quantity: 21,
+          price: 1.34
+        },
+        {
+          product: "socks",
+          quantity: 1,
+          price: 8.99
+        }
+      ]
     }
   }
 });

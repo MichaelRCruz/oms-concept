@@ -17,12 +17,6 @@
             <th><abbr title="Product">Product</abbr></th>
             <th><abbr title="Won">Quantity</abbr></th>
             <th><abbr title="Drawn">Price</abbr></th>
-            <th><abbr title="Lost">L</abbr></th>
-            <th><abbr title="Goals for">GF</abbr></th>
-            <th><abbr title="Goals against">GA</abbr></th>
-            <th><abbr title="Goal difference">GD</abbr></th>
-            <th><abbr title="Points">Pts</abbr></th>
-            <th>Qualification</th>
           </tr>
         </thead>
         <!-- <tfoot>
@@ -41,9 +35,6 @@
         <tbody>
           <tr>
             <td>
-              <drop-down />
-            </td>
-            <td>
               <input-field />
             </td>
             <td>
@@ -52,19 +43,6 @@
             <td>
               <input-field />
             </td>
-            <td>
-              <input-field />
-            </td>
-            <td>
-              <input-field />
-            </td>
-            <td>
-              <input-field />
-            </td>
-            <td>
-              <input-field />
-            </td>
-            <td><input-field /></td>
           </tr>
         </tbody>
       </table>
@@ -83,7 +61,7 @@
     components: { InputField, DropDown },
     data () {
       return {
-        line_items: {}
+        // line_items: $store.state.sales_order.line_items
       }
     },
     methods: {
@@ -129,9 +107,9 @@
     padding: 0 10px 0 10px;
   }
 
-  .formComponent {
+  /*.formComponent {
     margin-bottom: 20px;
-  }
+  }*/
 
   .detailsHeader {
     height: 23px;

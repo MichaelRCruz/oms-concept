@@ -15,7 +15,8 @@
 
         <input-field :fieldName="'sales rep'"
                      :placeholder="'Bobby Tables'"
-                     :fieldValue="$store.state.sales_order.sales_representative.email" />
+                     :fieldValue="hello" />
+                     <!-- :fieldValue="$store.state.sales_order.sales_representative.email" /> -->
         <dropdown :options="shipping_carriers" />
         <radio-button />
         <checkbox />
@@ -103,7 +104,6 @@
               // Examine the text in the response
               response.json().then(function(data) {
                 console.log('cool', data);
-                _self.zohoData = data;
               });
             }
           )

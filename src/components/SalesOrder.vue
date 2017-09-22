@@ -2,7 +2,6 @@
   <div class="salesDetails">
 
     <nav-bar />
-    <order-info />
     <sales-order-container />
     <line-items-container />
 
@@ -24,7 +23,7 @@
       },
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App'
+
       }
     },
     methods: {
