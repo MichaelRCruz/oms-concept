@@ -29,37 +29,36 @@
         <h6 class="title is-6">Shipping Address</h6>
         <input-field :fieldName="'name'"
                      :placeholder="'customer name'"
-                     :fieldValue="$store.state
-                                  .sales_order.customer.shipping_address.shipping_name" />
+                     :fieldValue="customer.shipping_address.shipping_name" />
         <input-field :fieldName="'street'"
                      :placeholder="'123 Main St'"
-                     :fieldValue="$store.state.sales_order.customer.shipping_address.street1" />
+                     :fieldValue="customer.shipping_address.street1" />
         <input-field :fieldName="'city'"
                      :placeholder="'Anytown'"
-                     :fieldValue="$store.state.sales_order.customer.shipping_address.city" />
+                     :fieldValue="customer.shipping_address.city" />
         <input-field :fieldName="'state'"
                      :placeholder="'California'"
-                     :fieldValue="$store.state.sales_order.customer.shipping_address.state" />
+                     :fieldValue="customer.shipping_address.state" />
         <input-field :fieldName="'zip'"
                      :placeholder="'12345'"
-                     :fieldValue="$store.state.sales_order.customer.shipping_address.zip" />
+                     :fieldValue="customer.shipping_address.zip" />
 
         <h6 class="title is-6">Billing Address</h6>
         <input-field :fieldName="'name'"
                      :placeholder="'customer name'"
-                     :fieldValue="$store.state.sales_order.customer.billing_address.billing_name" />
+                     :fieldValue="customer.billing_address.billing_name" />
         <input-field :fieldName="'street'"
                      :placeholder="'123 Main St'"
-                     :fieldValue="$store.state.sales_order.customer.billing_address.street1" />
+                     :fieldValue="customer.billing_address.street1" />
         <input-field :fieldName="'city'"
                      :placeholder="'Anytown'"
-                     :fieldValue="$store.state.sales_order.customer.billing_address.city" />
+                     :fieldValue="customer.billing_address.city" />
         <input-field :fieldName="'state'"
                      :placeholder="'California'"
-                     :fieldValue="$store.state.sales_order.customer.billing_address.state" />
+                     :fieldValue="customer.billing_address.state" />
         <input-field :fieldName="'zip'"
                      :placeholder="'12345'"
-                     :fieldValue="$store.state.sales_order.customer.billing_address.zip" />
+                     :fieldValue="customer.billing_address.zip" />
 
       </div>
     </div>
@@ -69,6 +68,8 @@
 
 
 <script>
+  import { mapGetters } from 'vuex';
+
   import Dropdown from './fields/Dropdown';
   import TextBox from './fields/TextBox';
   import Checkbox from './fields/checkbox';
@@ -77,6 +78,7 @@
   import { store } from '../store/store';
   import { eventBus } from '../main';
 
+
   export default {
     components: { Dropdown, TextBox, Checkbox, InputField, RadioButton },
     data () {
@@ -84,7 +86,14 @@
         shipping_carriers: ['FedEx', 'UPS', 'USPS']
       }
     },
+
+    computed: {
+      ...mapGetters(['customer']),
+    },
     methods: {
+
+      // TODO: Move these fetches out of the component.
+      // TODO: They should be actions in your Vuex store.
       fetchA() {
         let _self = this;
         let url = ''
@@ -116,7 +125,7 @@
       // this.fetchA();
       // console.log(this.zohoData);
       // console.log(this.$store.state.stringThing);
-      console.log(this.$store.state.sales_order.customer.shipping_address.shipping_name);
+      console.log(this.customer.shipping_address.shipping_name);
       // eventBus.$emit('here-is-data', this.shipping_carriers);
     },
     beforeMount() {
