@@ -17,6 +17,9 @@
 
 <script>
 export default {
+  data() {
+    test: "sup, yo"
+  }
 }
 </script>
 

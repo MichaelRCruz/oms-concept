@@ -53,7 +53,7 @@
           Invoices
         </a>
 
-        <div class="navbar-dropdown is-boxed">
+        <!-- <div class="navbar-dropdown is-boxed">
           <a class="navbar-item">
             Overview
           </a>
@@ -67,7 +67,7 @@
           <div class="navbar-item">
             Version 0.5.3
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 

@@ -21,6 +21,7 @@
         <radio-button />
         <checkbox />
         <text-box />
+        <text-box />
 
       </div>
 
@@ -58,7 +59,8 @@
                      :fieldValue="customer.billing_address.state" />
         <input-field :fieldName="'zip'"
                      :placeholder="'12345'"
-                     :fieldValue="customer.billing_address.zip" />
+                     :fieldValue="customer.billing_address.zip">
+        </input-field>
 
       </div>
     </div>
@@ -129,6 +131,7 @@
       // eventBus.$emit('here-is-data', this.shipping_carriers);
     },
     beforeMount() {
+      console.log('')
     }
   }
 
