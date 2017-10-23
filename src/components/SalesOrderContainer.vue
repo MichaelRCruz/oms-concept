@@ -9,58 +9,16 @@
         <i class="fa fa-chevron-down toggleArrow" aria-hidden="true"></i>
       </span>
     </div>
-
     <div class="notification panel">
       <div class="leftPanel">
 
-        <input-field :fieldName="'sales rep'"
-                     :placeholder="'Bobby Tables'"
-                     :fieldValue="hello" />
-                     <!-- :fieldValue="$store.state.sales_order.sales_representative.email" /> -->
-        <dropdown :options="shipping_carriers" />
-        <radio-button />
-        <checkbox />
-        <text-box />
         <text-box />
 
       </div>
 
       <div class="rightPanel field">
 
-        <h6 class="title is-6">Shipping Address</h6>
-        <input-field :fieldName="'name'"
-                     :placeholder="'customer name'"
-                     :fieldValue="customer.shipping_address.shipping_name" />
-        <input-field :fieldName="'street'"
-                     :placeholder="'123 Main St'"
-                     :fieldValue="customer.shipping_address.street1" />
-        <input-field :fieldName="'city'"
-                     :placeholder="'Anytown'"
-                     :fieldValue="customer.shipping_address.city" />
-        <input-field :fieldName="'state'"
-                     :placeholder="'California'"
-                     :fieldValue="customer.shipping_address.state" />
-        <input-field :fieldName="'zip'"
-                     :placeholder="'12345'"
-                     :fieldValue="customer.shipping_address.zip" />
-
-        <h6 class="title is-6">Billing Address</h6>
-        <input-field :fieldName="'name'"
-                     :placeholder="'customer name'"
-                     :fieldValue="customer.billing_address.billing_name" />
-        <input-field :fieldName="'street'"
-                     :placeholder="'123 Main St'"
-                     :fieldValue="customer.billing_address.street1" />
-        <input-field :fieldName="'city'"
-                     :placeholder="'Anytown'"
-                     :fieldValue="customer.billing_address.city" />
-        <input-field :fieldName="'state'"
-                     :placeholder="'California'"
-                     :fieldValue="customer.billing_address.state" />
-        <input-field :fieldName="'zip'"
-                     :placeholder="'12345'"
-                     :fieldValue="customer.billing_address.zip">
-        </input-field>
+        <input-field />
 
       </div>
     </div>

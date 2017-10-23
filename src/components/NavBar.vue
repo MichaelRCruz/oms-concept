@@ -1,90 +1,23 @@
 <template>
 
-  <nav class="navbar is-transparent" role="navigation" aria-label="dropdown navigation">
-    <a class="navbar-item">
-      <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-    </a>
-
-    <div class="navbar-start">
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          Sales Orders
-        </a>
-
-        <div class="navbar-dropdown is-boxed">
-          <a class="navbar-item">
-            Overview
-          </a>
-          <a class="navbar-item">
-            Elements
-          </a>
-          <a class="navbar-item">
-            Components
-          </a>
-          <hr class="navbar-divider">
-          <div class="navbar-item">
-            Version 0.5.3
-          </div>
-        </div>
-      </div>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          Purchase Orders
-        </a>
-
-        <div class="navbar-dropdown is-boxed">
-          <a class="navbar-item">
-            Overview
-          </a>
-          <a class="navbar-item">
-            Elements
-          </a>
-          <a class="navbar-item">
-            Components
-          </a>
-          <hr class="navbar-divider">
-          <div class="navbar-item">
-            Version 0.5.3
-          </div>
-        </div>
-      </div>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          Invoices
-        </a>
-
-        <!-- <div class="navbar-dropdown is-boxed">
-          <a class="navbar-item">
-            Overview
-          </a>
-          <a class="navbar-item">
-            Elements
-          </a>
-          <a class="navbar-item">
-            Components
-          </a>
-          <hr class="navbar-divider">
-          <div class="navbar-item">
-            Version 0.5.3
-          </div>
-        </div> -->
-      </div>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right">Logo</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
     </div>
-
-    <div class="navbar-end">
-        <!-- navbar items -->
-    </div>
-
   </nav>
 
 </template>
 
 <script>
-import UserMenu from './UserMenu.vue';
 
 export default {
   components: {
-      UserMenu
+      
     },
   data () {
     return {
